@@ -1,0 +1,467 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC')
+
+*{
+	margin:0px;
+	padding: 0px; 
+	/*box-sizing: border-box; */
+}
+a{
+	text-decoration:none;
+	font-size: 40px;
+	/*color: black; general de fuentes*/
+
+}
+
+/*p{
+	font-size: 20px;
+	color: black;
+
+} */
+
+
+
+body{
+/*background:url(https://picography.co/wp-content/uploads/2020/03/picography-electric-heater-glow-768x576.jpg ); */
+
+/*background-color: #100303;*/
+
+/*background-image: url("imagenes/plano_1.png");  */
+/*bbackground-image: url("imagenes/fondo_azul.jpg"); */
+background-image: url("imagenes/madera_3.jpg");  
+/*background-size: cover;*/
+
+
+}
+
+.padre{
+
+	display: flex;
+
+	flex-flow: column nowrap;  
+
+}
+
+ 
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ --  HEADER --$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+	.header{	
+	display: flex;
+	flex-flow: column nowrap;
+	/*height: 70%;   */
+	flex: 1 1 auto;
+	/*height: 200px; */
+
+
+
+	}
+		.menu{	
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-flow: row nowrap;
+		/*  background: #381460; */
+		/*background: rgba(0, 0, 0, 0.70);*/
+		background: rgba(0,0,0,.4);
+		/*height:30%;*/
+		height: 200px;
+	
+
+
+		}
+			.logo{
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			flex-flow: row nowrap;
+			/* background: #f7f7f7;*/ 
+			/*background: white;*/
+			/*background-color: black;------------------*/
+			flex: 1 1 auto;
+			justify-content: center;
+			align-items: center;
+			}
+
+				.a{	
+				flex: 1 1 auto;
+				}
+				.logo img{
+				opacity: 1.0;
+				width: 150px;
+
+				-webkit-transition:all 1.0s ease;
+				}
+				.logo img:hover {
+				/*efecto combinado giro y sombra circular*/
+				width: 180px;
+				height: 180px;
+				border-radius:100%;
+				-webkit-border-radius:100%;
+				box-shadow: 0px 0px 15px 15px #00263b;
+				-webkit-box-shadow: 0px 0px 15px 15px #f17808;
+				transform: rotate(720deg);
+				-webkit-transform: rotate(720deg);
+
+				}
+				
+			.social{	
+
+			/*background: #d4f3ef;-------*/
+
+
+			flex: 1 1 auto;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			flex-flow: : row nowrap;
+			justify-content: center;
+			align-items: center;
+
+			
+			}
+				.social a{
+				/*controla boxes de social*/
+				/*background: black;-------------*/
+				flex: 1 1 auto;
+
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				justify-content: center;
+				}
+
+				.icon {
+				/*background: orange; puedo controlar el color (fondo)de los tres elementos en general*/
+
+				justify-content: center;
+				font color: green;
+				/*justify-content: space-around;*/
+				align-content: center;
+
+
+
+				}
+
+						
+					.icon-envelope{
+		   			/*background: #3FFFD7;*/
+
+		 			color: #3FFFD7;
+		  			font-size: 40px;
+		   			padding: 5px;
+
+					}
+						.icon-envelope:hover{
+						color: #f3e1e1;
+			  			font-size: 90px;
+			   			padding: 5px;
+			   			background: #e32249;
+			   			border-radius: 75%;
+						/* Efecto vibración */
+						-webkit-animation: tiembla 0.1s infinite;
+						}
+						@-webkit-keyframes tiembla{
+						0%  { -webkit-transform:rotateZ(-5deg); }
+						50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+						100%{ -webkit-transform:rotateZ( 5deg); }
+						}
+						
+
+					.icon-mobile{
+			   		/*background: #3FFFD7;*/
+			 		color: orange;
+			  		font-size: 40px;
+			   		padding: 5px;
+					}
+						.icon-mobile:hover{
+						color: #000000;
+			  			font-size: 90px;
+			   			padding: 5px;
+			   			background: #f1f1f6;
+			   			border-radius: 75%;
+						/* Efecto vibración */
+						-webkit-animation: tiembla 0.1s infinite;
+						}
+						@-webkit-keyframes tiembla{
+						0%  { -webkit-transform:rotateZ(-7deg); }
+						50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+						100%{ -webkit-transform:rotateZ( 3deg); }
+						}
+						
+
+					.icon-direction{
+			 		color: #f9d89c;
+			  		font-size: 40px;
+			   		padding: 5px;
+					}
+						.icon-direction:hover{
+						color: #120136;
+			  			font-size: 90px;
+			   			padding: 5px;
+			   			background: #ffd31d;
+			   			border-radius: 75%;
+						/* Efecto vibración */
+						-webkit-animation: tiembla 0.1s infinite;
+						}
+						@-webkit-keyframes tiembla{
+						0%  { -webkit-transform:rotateZ(-7deg); }
+						50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+						100%{ -webkit-transform:rotateZ( 3deg); }
+						}
+						
+
+					.icon-gift{
+			 		color: #79d70f;
+			  		font-size: 40px;
+			   		padding: 5px;
+					}
+						.icon-gift:hover{
+						color: #f0f0f0;
+			  			font-size: 90px;
+			   			padding: 5px;
+			   			background: #e32249;
+			   			border-radius: 75%;
+						/* Efecto vibración */
+						-webkit-animation: tiembla 0.1s infinite;
+						}
+						@-webkit-keyframes tiembla{
+						0%  { -webkit-transform:rotateZ(-7deg); }
+						50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+						100%{ -webkit-transform:rotateZ( 3deg); }
+						}
+
+
+
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ --  SECCIÓN --$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+
+
+
+ /* $$$$$$$$$$$$$$$$ --  CARROUSEL --$$$$$$$$$$$$$$$$$$*/
+ /*
+.contenedor_carrousel{
+    width: 210px;
+    margin: auto;
+    perspective: 800px;
+    position: relative;
+    margin-top: 50px;
+}
+.carrousel{
+    width: 100%;
+    position: absolute;
+    animation: rotar 15s infinite linear;
+    transform-style: preserve-3d;
+}
+.carrousel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+.carrousel figure{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+}
+.carrousel figure:hover{
+    box-shadow: 0px 0px 0px 0px black;
+    transition: all 300ms;
+}
+.carrousel figure:nth-child(1){transform: rotateY(0deg) translateZ(300px);}
+.carrousel figure:nth-child(2){transform: rotateY(40deg) translateZ(300px);}
+.carrousel figure:nth-child(3){transform: rotateY(80deg) translateZ(300px);}
+.carrousel figure:nth-child(4){transform: rotateY(120deg) translateZ(300px);}
+.carrousel figure:nth-child(5){transform: rotateY(160deg) translateZ(300px);}
+.carrousel figure:nth-child(6){transform: rotateY(200deg) translateZ(300px);}
+.carrousel figure:nth-child(7){transform: rotateY(240deg) translateZ(300px);}
+.carrousel figure:nth-child(8){transform: rotateY(280deg) translateZ(300px);}
+.carrousel figure:nth-child(9){transform: rotateY(320deg) translateZ(300px);}
+.carrousel figure:nth-child(10){transform: rotateY(360deg) translateZ(300px);}
+.carrousel img{
+    width: 100%;
+    transition: all 300ms;
+}
+.carrousel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+@keyframes rotar{
+    from{
+        transform: rotateY(0deg);
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+
+*/
+
+ /* $$$$$$$$$$$$$$$$ --  CARROUSEL --$$$$$$$$$$$$$$$$$$*/
+
+
+ /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ --  SWIPER --$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+.contiene{
+
+
+
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	height: 100%;/*1500px*/
+	flex: 1 1 auto;
+
+	/*background: orange;*/
+
+	justify-content: center;
+/*	align-items: center;*/
+
+
+
+
+}
+
+
+
+ /* _________________________ CONTROL_SWIPER _________________________*/
+		.swiper-container {
+		  width: 400px;   /*300px   tamaño de la caja swiper*/
+		  height: 400px;   /*300px   tamaño de la caja swiper*/
+		  position: absolute;
+		  left: 0; /* manipular posisión del cubo*/
+		  top: 42%; /* manipular posisión del cubo*/
+		  margin-left: -150px;
+		  margin-top: -150px;
+		}
+
+
+
+		.swiper-slide {
+		background-position: center;
+		background-size: cover;
+		}
+
+ /* _________________________ CONTENEDOR_1 _________________________*/
+		.contenedor1{
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-flow: row wrap;
+		width: 600px;   /*600px*/
+		height: 600px;   /*600px*/
+
+		margin: 25px 50px ;  /*25px 65px posición del contenedor:  arr-ab;der-iz*/
+
+
+		position: relative;
+        /*background: red;*/
+        background: rgba(255, 34, 0, 0.3);
+	    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	    font-size: 14px;
+	    color:#000;
+	    padding: 0;
+		}
+			.contenedor1:hover{
+			/*background: rgba(217, 0, 255, 0.7);*/
+			background: rgba(255, 30, 0, 0.7);
+			}
+
+ /* _________________________ CONTENEDOR_2 _________________________*/
+
+
+
+
+		.contenedor2{
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-flow: row wrap;
+		width: 600px;   /*600px*/
+		height: 600px;   /*600px*/
+
+
+		margin: 25px 50px ; /*25px 65px posición del contenedor:  arr-ab;der-iz*/
+
+		position: relative;
+        /*background: green;*/
+        background: rgba(10, 255, 210, 0.15);
+	    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	    font-size: 14px;
+	    color:#000;	    
+	    padding: 0;
+		}
+			.contenedor2:hover{
+			background: rgba(127, 255, 0, 0.7);
+			}
+
+
+/* _________________________ CONTENEDOR_3 _________________________*/
+
+		.contenedor3{
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-flow: row wrap;
+		width: 600px;   /*600px*/
+		height: 600px;   /*600px*/
+
+
+
+		margin: 25px 50px ; /*25px 65px posición del contenedor:  arr-ab;der-iz*/
+		/*background: black;*/
+		/*background: rgba(51, 255, 10, 0.36);*/
+		background: rgba(0, 89, 255, 0.2);
+	    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	    font-size: 14px;
+	    color:#000;	    
+	    padding: 0;
+		}
+			.contenedor3:hover{
+			background: rgba(0, 89, 255, 0.7);
+			}
+
+
+ /* _________________________ CONTENEDOR_4 _________________________*/
+
+		.contenedor4{
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-flow: row wrap;
+		width: 600px;   /*600px*/
+		height: 600px;   /*600px*/
+
+
+		/*background: blue;*/
+		/*background: rgba(255, 10, 235, 0.36);*/
+		background:  rgba(255, 234, 0, 0.2);
+		margin: 25px 50px ; /*25px 65px posición del contenedor:  arr-ab;der-iz*/
+	    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	    font-size: 14px;
+	    color:#000;	    
+	    padding: 0;
+		}
+
+			.contenedor4:hover{
+			background: rgba(255, 234, 0, 0.8);
+			}
+
+
+		/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+	/*html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }	*/

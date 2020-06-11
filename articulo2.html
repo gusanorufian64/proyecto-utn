@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+	<!-- transforms.html -->
+<head>
+	<meta charset="UTF-8">
+	<title>Nuestros trabajos</title>
+	<link href="pyme_3.css" rel="stylesheet">
+	<link href="fonts/style.css" rel="stylesheet"> 	<!-- fuente para los iconos -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, inicial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel ="icon"   href="imagenes/favicon.png"  type="image/png" >
+	<link rel="stylesheet" href="swiper_1/swiper.min.css"><!--   direccion del archivo css para el swiper -->
+
+
+</head>
+<body>
+
+	<div class="padre">
+		<header class="header">
+			<div class="menu">
+				<div class="logo">
+					<a href="index.html"><img src="imagenes/logo_jm_vec.svg" width="200px" height="200px"  alt="Logo de la empresa"></a>
+				</div>
+
+
+				<div class="social" >
+
+						<a href="email.html"><span class="icon icon-envelope" alt="Correo" ></span></a>
+
+						<a href="telefono.html"><span class="icon icon-mobile" alt="Telefono" ></span></a>
+
+						<a href="direccion.html"><span class="icon icon-direction" alt="Direccion"></span></a>
+
+						<a href="otros.html"><span class="icon icon-gift" alt="Regalos"></span></a>
+				</div>
+			</div>
+
+
+		</header>
+		
+
+
+		<section>
+				<div class="contiene">
+
+
+
+
+
+					<div class="contenedor1">
+					<!-- Swiper -->
+						<div class="swiper-container">
+							    <div class="swiper-wrapper">
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_1.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_2.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_3.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_4.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_5.jpg)"></div>
+							    </div>
+							    <!-- Add Pagination -->
+							    <div class="swiper-pagination"></div>
+						</div>
+					</div><!-- FI contenedor1 -->
+
+
+					<div class="contenedor2">
+						<div class="swiper-container">
+							    <div class="swiper-wrapper">
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_8.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_7.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_6.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_9.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_10.jpg)"></div>
+							    </div>
+							    <!-- Add Pagination -->
+							    <div class="swiper-pagination"></div>
+						</div>
+					</div><!-- FI contenedor2 -->
+
+
+					<div class="contenedor3">
+						<div class="swiper-container">
+							    <div class="swiper-wrapper">
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_5.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_4.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_3.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_2.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_1.jpg)"></div>
+							    </div>
+							    <!-- Add Pagination -->
+							    <div class="swiper-pagination"></div>
+						</div>
+					</div><!-- FI contenedor3 -->
+
+
+					<div class="contenedor4">
+						<div class="swiper-container">
+							    <div class="swiper-wrapper">
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_10.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_9.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_8.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_7.jpg)"></div>
+								    <div class="swiper-slide" style="background-image:url(./imagenes/imagen_6.jpg)"></div>
+							    </div>
+							    <!-- Add Pagination -->
+							    <div class="swiper-pagination"></div>
+						</div>
+						
+					</div>
+
+
+
+					
+				</div><!-- FIN contiene -->
+		</section>
+
+
+			    
+    		<!-- 	<div class="contenedor_carrousel">
+			        <div class="carrousel">
+			            <figure><img src="imagenes/img1.jpg"></figure>
+			            <figure><img src="imagenes/img2.jpg"></figure>
+			            <figure><img src="imagenes/img3.jpg"></figure>
+			            <figure><img src="imagenes/img4.jpg"></figure>
+			            <figure><img src="imagenes/img5.jpg"></figure>
+			            <figure><img src="imagenes/img6.jpg"></figure>
+			            <figure><img src="imagenes/img7.jpg"></figure>
+			            <figure><img src="imagenes/img8.jpg"></figure>
+			            <figure><img src="imagenes/img9.jpg"></figure>
+			            <figure><img src="imagenes/img10.jpg"></figure>
+			        </div>
+    			</div>    
+
+		</seccion>         -->
+
+
+	</div>  <!-- FIN PADRE -->
+	<script src="swiper_1/swiper.min.js"></script><!--   direccion del archivo js para el swiper -->
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'cube',
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+</body>
+</html>

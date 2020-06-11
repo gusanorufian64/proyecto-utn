@@ -1,0 +1,504 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC')
+
+*{
+	margin:0px;
+	padding: 0px; 
+	/*box-sizing: border-box; */
+}
+a{
+	text-decoration:none;
+	font-size: 40px;
+	/*color: black; general de fuentes*/
+
+}
+
+/*p{
+	font-size: 20px;
+	color: black;
+
+} */
+
+
+
+body{
+/*background:url(https://picography.co/wp-content/uploads/2020/03/picography-electric-heater-glow-768x576.jpg ); */
+
+/*background-color: #100303;*/
+
+/*background-image: url("imagenes/plano_1.png");  */
+background-image: url("imagenes/imagen_corte_1.jpg");  
+background-size: cover;
+
+
+}
+
+.padre{
+
+	display: flex;
+
+	flex-flow: column nowrap;  
+
+}
+
+ 
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ --  HEADER --$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+	.header{	
+	display: flex;
+	flex-flow: column nowrap;
+	/*height: 70%;   */
+	flex: 1 1 auto;
+	/*height: 200px; */
+
+
+
+	}
+		.menu{	
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		flex-flow: row nowrap;
+		/*  background: #381460; */
+		/*background: rgba(0, 0, 0, 0.70);*/
+		background: rgba(0,0,0,.6);
+		/*height:30%;*/
+		height: 200px;
+	
+
+
+		}
+			.logo{
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			flex-flow: row nowrap;
+			/* background: #f7f7f7;*/ 
+			/*background: white;*/
+			/*background-color: black;------------------*/
+			flex: 1 1 auto;
+			justify-content: center;
+			align-items: center;
+			}
+
+				.a{	
+				flex: 1 1 auto;
+				}
+				.logo img{
+				opacity: 1.0;
+				width: 150px;
+
+				-webkit-transition:all 1.0s ease;
+				}
+				.logo img:hover {
+				/*efecto combinado giro y sombra circular*/
+				width: 180px;
+				height: 180px;
+				border-radius:100%;
+				-webkit-border-radius:100%;
+				box-shadow: 0px 0px 15px 15px #00263b;
+				-webkit-box-shadow: 0px 0px 15px 15px #f17808;
+				transform: rotate(720deg);
+				-webkit-transform: rotate(720deg);
+
+				}
+				
+			.social{	
+
+			/*background: #d4f3ef;-------*/
+
+
+			flex: 1 1 auto;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			flex-flow: : row nowrap;
+			justify-content: center;
+			align-items: center;
+
+			
+			}
+				.social a{
+				/*controla boxes de social*/
+				/*background: black;-------------*/
+				flex: 1 1 auto;
+
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				justify-content: center;
+				}
+
+				.icon {
+				/*background: orange; puedo controlar el color (fondo)de los tres elementos en general*/
+
+				justify-content: center;
+				font color: green;
+				/*justify-content: space-around;*/
+				align-content: center;
+
+
+
+				}
+
+						
+					.icon-envelope{
+		   			/*background: #3FFFD7;*/
+
+		 			color: #3FFFD7;
+		  			font-size: 40px;
+		   			padding: 5px;
+
+					}
+						.icon-envelope:hover{
+						color: #f3e1e1;
+			  			font-size: 90px;
+			   			padding: 5px;
+			   			background: #e32249;
+			   			border-radius: 75%;
+						/* Efecto vibración */
+						-webkit-animation: tiembla 0.1s infinite;
+						}
+						@-webkit-keyframes tiembla{
+						0%  { -webkit-transform:rotateZ(-5deg); }
+						50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+						100%{ -webkit-transform:rotateZ( 5deg); }
+						}
+						
+
+					.icon-mobile{
+			   		/*background: #3FFFD7;*/
+			 		color: orange;
+			  		font-size: 40px;
+			   		padding: 5px;
+					}
+						.icon-mobile:hover{
+						color: #000000;
+			  			font-size: 90px;
+			   			padding: 5px;
+			   			background: #f1f1f6;
+			   			border-radius: 75%;
+						/* Efecto vibración */
+						-webkit-animation: tiembla 0.1s infinite;
+						}
+						@-webkit-keyframes tiembla{
+						0%  { -webkit-transform:rotateZ(-7deg); }
+						50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+						100%{ -webkit-transform:rotateZ( 3deg); }
+						}
+						
+
+					.icon-direction{
+			 		color: #f9d89c;
+			  		font-size: 40px;
+			   		padding: 5px;
+					}
+						.icon-direction:hover{
+						color: #120136;
+			  			font-size: 90px;
+			   			padding: 5px;
+			   			background: #ffd31d;
+			   			border-radius: 75%;
+						/* Efecto vibración */
+						-webkit-animation: tiembla 0.1s infinite;
+						}
+						@-webkit-keyframes tiembla{
+						0%  { -webkit-transform:rotateZ(-7deg); }
+						50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+						100%{ -webkit-transform:rotateZ( 3deg); }
+						}
+						
+
+					.icon-gift{
+			 		color: #79d70f;
+			  		font-size: 40px;
+			   		padding: 5px;
+					}
+						.icon-gift:hover{
+						color: #f0f0f0;
+			  			font-size: 90px;
+			   			padding: 5px;
+			   			background: #e32249;
+			   			border-radius: 75%;
+						/* Efecto vibración */
+						-webkit-animation: tiembla 0.1s infinite;
+						}
+						@-webkit-keyframes tiembla{
+						0%  { -webkit-transform:rotateZ(-7deg); }
+						50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+						100%{ -webkit-transform:rotateZ( 3deg); }
+						}
+
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ --  SECCIÓN --$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+	.seccion{	
+	/*background: white;  ajustacolor fondo general de la seccion*/
+	/*background-color: white;  */
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	/*height: 30%;    */
+	flex: 1 1 auto;
+	}
+
+
+		.articulos{	
+		display: flex;
+		flex-flow: row nowrap;
+		/*  background: #381460; */
+		/*background: white;*/
+		/*height: 60%;*/
+
+		}
+
+		.articulos a {
+		display: flex; 
+		/* background: #fd5e53;  color sólido */
+		flex: 1 1 auto;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		justify-content: center;
+		align-items: center;
+		flex-flow: : column nowrap;
+		}	
+
+/* $$$$$$$$$$$$$$$$$$$$$$$ -- ARTICULO 1 --$$$$$$$$$$$$$$$$$$$$$$$ */	
+			.uno{
+			flex: 1 1 auto;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			flex-flow: : column nowrap;
+			justify-content: center;
+			align-items: center;
+
+			transition: 1s;
+			font-size: 0px;
+
+			}
+
+					.arti1{
+					height: 650px;                                      
+					background:rgba(252, 126, 126, 0.6);
+					transition: 1s;
+					font-size: 0px;
+					}
+	
+						.arti1:hover{
+
+						font-size: 20px;
+						background-image:url('imagenes/in_1.png');
+    					background-repeat:no-repeat;
+    					background-size:cover;
+    					background-size:100% 100%;
+						/*transform: scale(1.4);*/
+						transform: scale(3, 1); /* Igual que: scaleX(2) scaleY(0.5) */
+		  				transform-origin: left;
+						box-shadow: 2px 2px 2px #000;
+						}
+
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$ -- ARTICULO 2 --$$$$$$$$$$$$$$$$$$$$$$$ */
+			.dos{
+			flex: 1 1 auto;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			flex-flow: : column wrap;
+			/*justify-content: center;
+			align-items: center;*/
+
+			}
+
+					.arti2{
+					height: 650px;                                      
+					background: rgba(117, 245, 232, 0.5);
+					transition: 1s;
+					font-size: 0px;
+					}
+
+						.arti2:hover{
+						-webkit-animation: scale 2s linear 1s 2, spin 1s linear 1s infinite alternate;
+
+
+						font-size: 20px;
+						background-image:url('imagenes/in_2.png');
+    					background-repeat:no-repeat;
+    					background-size:cover;
+    					background-size:100% 100%;
+						/*transform: scale(1.4);*/
+						transform: scale(3, 1); /* Igual que: scaleX(2) scaleY(0.5) */
+		  				transform-origin: center;
+						box-shadow: 2px 2px 2px #000;
+						}
+
+						@-webkit-keyframes scale {
+						  from {transform:  scale(3, 1); }
+						  to{transform:  scale(3, 1);}
+						}
+						@-webkit-keyframes scaletext {
+						  from {transform:  scale(3, 1); }
+						  to{transform:  scale(3, 1);}
+						}
+						@-webkit-keyframes spin {
+						  from {transform:  rotateY(0deg) scale(3, 1);}
+						  to {transform:  rotateY(90deg) scale(3, 1);}
+						}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$ -- ARTICULO 3 --$$$$$$$$$$$$$$$$$$$$$$$ */
+			.tres{
+			flex: 1 1 auto;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			flex-flow: : row nowrap;
+			justify-content: center;
+			align-items: center;
+			}
+
+
+
+						.arti3{
+						height: 650px;
+						background: rgba(79, 32, 136, 0.5);
+						transition: 1s;
+						font-size: 0px;
+						}
+						.arti3:hover{
+						-webkit-animation: scale 2s linear 1s 2, spin 1s linear 1s infinite alternate;
+
+
+						font-size: 20px;
+						background-image:url('imagenes/in_3.png');
+    					background-repeat:no-repeat;
+    					background-size:cover;
+    					background-size:100% 100%;
+						/*transform: scale(1.4);*/
+						transform: scale(3, 1); /* Igual que: scaleX(2) scaleY(0.5) */
+		  				transform-origin: center;
+						box-shadow: 2px 2px 2px #000;
+						}
+
+						@-webkit-keyframes scale {
+						  from {transform:  scale(3, 1); }
+						  to{transform:  scale(3, 1);}
+						}
+						@-webkit-keyframes scaletext {
+						  from {transform:  scale(3, 1); }
+						  to{transform:  scale(3, 1);}
+						}
+						@-webkit-keyframes spin {
+						  from {transform:  rotateY(0deg) scale(3, 1);}
+						  to {transform:  rotateY(90deg) scale(3, 1);}
+						}
+/* $$$$$$$$$$$$$$$$$$$$$$$ -- ARTICULO 4 --$$$$$$$$$$$$$$$$$$$$$$$ */
+			.cuatro{
+			flex: 1 1 auto;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			flex-flow: : row nowrap;
+			justify-content: center;
+			align-items: center;
+			}
+
+
+
+						.arti4{
+						height: 650px;
+						background: rgba(69, 196, 116, 0.5);
+						transition: 1s;
+						font-size: 0px;
+						}
+						.arti4:hover{
+						-webkit-animation: scale 2s linear 1s 2, spin 1s linear 1s infinite alternate;
+
+
+						font-size: 20px;
+						background-image:url('imagenes/in_4.png');
+    					background-repeat:no-repeat;
+    					background-size:cover;
+    					background-size:100% 100%;
+						/*transform: scale(1.4);*/
+						transform: scale(3, 1); /* Igual que: scaleX(2) scaleY(0.5) */
+		  				transform-origin: center;
+						box-shadow: 2px 2px 2px #000;
+						}
+
+						@-webkit-keyframes scale {
+						  from {transform:  scale(3, 1); }
+						  to{transform:  scale(3, 1);}
+						}
+						@-webkit-keyframes scaletext {
+						  from {transform:  scale(3, 1); }
+						  to{transform:  scale(3, 1);}
+						}
+						@-webkit-keyframes spin {
+						  from {transform:  rotateY(0deg) scale(3, 1);}
+						  to {transform:  rotateY(90deg) scale(3, 1);}
+						}
+/* $$$$$$$$$$$$$$$$$$$$$$$ -- ARTICULO 5 --$$$$$$$$$$$$$$$$$$$$$$$ */
+			.cinco{
+			flex: 1 1 auto;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			flex-flow: : row nowrap;
+			justify-content: center;
+			align-items: center;
+			}
+
+
+
+						.arti5{
+						height: 650px;
+						background: rgba(33, 16, 8, 0.5);
+						transition: 1s;
+						font-size: 0px;
+						}
+						.arti5:hover{
+
+						font-size: 20px;
+						background-image:url('imagenes/sublime-2.png');
+    					background-repeat:no-repeat;
+    					background-size:cover;
+    					background-size:100% 100%;
+						/*transform: scale(1.4);*/
+						transform: scale(3, 1); /* Igual que: scaleX(2) scaleY(0.5) */
+		  				transform-origin: right;
+						box-shadow: 2px 2px 2px #000;
+						}
+
+
+
+
+
+	/*.footer{/*
+	/* 	background: #000;*/
+
+		/*background: #00263b;  */
+	/* } /*
+	/* Este es un comentario en CSS  */
+	/*	.pie{	/*
+	/*	background: #00a1ab;/*
+	/*	}    /*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
